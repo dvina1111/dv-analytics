@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - DV Data Analytics</title>
+    <style>
+        /* CSS for styling purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: black;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+ 
+        .mission-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .highlights-section {
+            margin-bottom: 30px;
+        }
+
+        .highlights-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .consulting-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .consulting-section ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .consulting-section li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="shortcut icon" type="png" href="images/icon/DVlogo.png">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+        <title>DV Analytics</title>
+        <meta name="desciption" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="about.css">
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script>
+            $(window).on('scroll', function(){
+                  if($(window).scrollTop()){
+                    $('nav').addClass('black');
+                  }else {
+                $('nav').removeClass('black');
+              }
+            })
+        </script>
+     <script>
+        function redirectToHomePage() {
+            window.location.href = 'index.html'; 
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            const homeButton = document.querySelector('a.active[href="index.html"]');
+            
+            if (homeButton) {
+                homeButton.addEventListener('click', function (event) {
+                    event.preventDefault(); 
+                    redirectToHomePage(); 
+                });
+            }
+        });
+    </script>
+    
+    
+    </head>
+    
+    
+    <header id="header">
+        <nav>
+            <div class="logo"><img src="https://dvanalyticsmds.com/wp-content/uploads/2021/06/dvanalytics-logo-small.png" alt="logo"></div>
+            <ul>
+                <li><a class="active" href="../index.html">Home</a></li>
+                <li><a href="#about_section">About Us</a></li>
+                <li><a href="#team_section">Success Stories</a></li>
+                <li><a href="#services_section">Explore Courses</a></li>
+                <li><a href="#contactus_section">Contact</a></li>
+            </ul>
+            <div class="srch"><input type="text" class="search" placeholder="Explore here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+            <a class="get-started" href="login.html">Get Started</a>
+            <img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+        </nav>
+    </header>
+
+    <h1>Data analytics</h1>
+    <div class="content">
+        <div class="section">
+            <h1>About us</h1>
+            <p>DV Data Analytics is a leading data science training and consulting firm, committed to bridging the gap between industry requirements and candidate skills. Our aim is to build relationships based on honesty, transparency, and trust with both our students and corporate clients. We prioritize delivering practical, industry-oriented knowledge to our candidates.</p>
+        </div>
+
+        <div class="section">
+            <h2>Key Highlights</h2>
+            <p>DV Data Analytics, as a Data Science Training Institute in Bangalore, has established itself over the last 12 years by offering innovative academic programs and maintaining strong industry connections.</p>
+            <ul>
+                <li>Enrolled more than 2500 candidates</li>
+                <li>95%+ success rate in placements</li>
+                <li>17.5 lacs pa. as an average salary</li>
+                <li>Faculty strength from industry experts</li>
+                <li>Placements in top MNCs including Morgan Stanley, Amazon, Flipkart, etc.</li>
+            </ul>
+        </div>
+
+    <!-- Consulting Services Section -->
+    <div class="consulting-section">
+        <h2>Consulting Services</h2>
+        <p>
+            Our consulting team consists of senior industry professionals with expertise in Telecom, Banking, Insurance, E-commerce, and Retail sectors. We aim to optimize organizational growth through a data-driven approach, offering solutions in:
+        </p>
+        <ul>
+            <li>Data quality and management challenges</li>
+            <li>Business intelligence and MIS reporting and automation</li>
+            <li>Technology migration and process improvements</li>
+            <li>Advanced analytics solutions and strategy building</li>
+            <li>Developing automated actions using Machine Learning and AI</li>
+            <li>Model deployment and execution</li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+   <!-- Footer -->
+
+
+
+<!-- FEEDBACK -->
+<div class="title2" id="feedBACK">
+	<span>Give Feedback</span>
+	<div class="shortdesc2">
+		<p>Please share your valuable feedback to us</p>
+	</div>
+</div>
+
+<div class="feedbox">
+	<div class="feed">
+		<form action="mailto:roshank9419@gmail.com" method="post" enctype="text/plain">
+			<label>Your Name</label><br>
+			<input type="text" name="" class="fname" required="required"><br>
+			<label>Email</label><br>
+			<input type="email" name="mail" required="required"><br>
+			<label>Additional Details</label><br>
+			<textarea name="addtional"></textarea><br>
+			<button type="submit" id="csubmit">Send Message</button>
+		</form>
+	</div>
+</div>
+
+<!-- Sliding Information -->
+<marquee style="background: linear-gradient(to right,  turquoise, #08419d); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”</div></marquee>
+
+<!-- FOOTER -->
+<footer>
+	<div class="footer-container">
+		<div class="left-col">
+			<img src="images/icon/DVlogo.png" style="width: 200px;">
+			<div class="logo"></div>
+			<div class="social-media">
+				<a href="#"><img src="images/icon\fb.png"></a>
+				<a href="#"><img src="images/icon\insta.png"></a>
+				<a href="#"><img src="images/icon\tt.png"></a>
+				<a href="#"><img src="images/icon\ytube.png"></a>
+				<a href="#"><img src="images/icon\linkedin.png"></a>
+			</div><br><br>
+			<p class="rights-text">Copyright © 2021 DV Analytics All Rights Reserved.</p>
+			<br><p><img src="images/icon/location.png"> DV Data Analytics Bangalore<br>#52, 2nd Floor:
+				Malleshpalya Maruthinagar, Bangalore-560075</p><br>
+			<p><img src="images/icon/phone.png"> +91 8095881188<br><img src="images/icon/mail.png">&nbsp; info@dvanalyticsmds.com</p>
+		</div>
+		<div class="right-col">
+			<h1 style="color: #fff">Our Newsletter</h1>
+			<div class="border"></div><br>
+			<p>Enter Your Email to get our News and updates.</p>
+			<form class="newsletter-form">
+				<input class="txtb" type="email" placeholder="Enter Your Email">
+				<input class="btn" type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
+</body>
+</html>
